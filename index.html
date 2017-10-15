@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kurs Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/wlasny.css">
+    <style>
+    /*
+      [class*="col-"]{
+        background-color: rgba(255,195,50,.3);
+        border: 1px solid rgba(255,195,50,.4);
+        padding: 10px;
+      }
+    */
+    </style>
+  </head>
+  <body>
+  <div class="row">
+   <nav class="navbar navbar-default navbar-fixex-top navbar-inverse"> <!--navbar-fixex-top - menu pojawia się zawsze na górze strony-->
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+	      <span class="sr-only">Nawigacja</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+    	</button>
+    </div>
+    <div class="collapse navbar-collapse" id="collapse">
+	  	<ul class="nav navbar-nav">
+		  <li><a href="#">home</a></li>
+		  <li class="active"><a href="#">oferta</a></li>
+		  <li class="dropdown"><a href="#" data-toggle="dropdown">kursy <span class="caret"></span></a>
+		   <ul class="dropdown-menu">
+		  	<li><a href="#">programowanie</a></li>
+		  	<li><a href="#">grafika</a></li>
+		  	<li><a href="#">video</a></li>
+		  	<li><a href="#">DTP</a></li>
+		   </ul>
+		  </li>
+		  <li><a href="#">promocje</a></li>
+		  <li><a href="#">kontakt</a></li>
+		</ul>
+	</div>
+   </nav>
+  </div>
+
+    <div class="container">
+      <header class="row">
+        <div class="col-lg-6">
+          <img src="materialy/03/03_06/start/images/logo_sk.jpg" alt="Strefa Kursów">
+        </div>
+        <div class="col-lg-6">
+          <h2>Wydawnictwo Strefa Kursów</h2>
+          <h3>Zadzwoń do nas: 888­-223-111</h3>
+        </div>
+     </header>
+    </div>
+    <div id="pokaz_slajdow" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+    <li data-target="#pokaz_slajdow" data-slide-to="0" class="active"></li>
+    <li data-target="#pokaz_slajdow" data-slide-to="1"></li>
+    <li data-target="#pokaz_slajdow" data-slide-to="2"></li>
+ 	</ol>
+     <div class="carousel-inner">
+       <div class="item active">
+        <img src="materialy/06/06_04/start/images/banner_01_1200x440.jpg" alt="reklama" class="img-responsive img-rounded">
+        	<div class="carousel-caption">
+         	<h2>Inni dopiero się uczą Ty już potrafisz</h2>
+        	<p>ODBIERZ 5% RABATU, regularne zniżki na nowości, informacje o darmowych filmach</p>
+        	</div>
+       </div> 
+       <div class="item">
+        <img src="materialy/06/06_04/start/images/banner_02_1200x440.jpg" alt="reklama" class="img-responsive img-rounded">
+       </div>
+       <div class="item">
+        <img src="materialy/06/06_04/start/images/banner_03_1200x440.jpg" alt="reklama" class="img-responsive img-rounded">
+       </div>
+     </div>   
+    </div>
+  <div>
+  		<a class="right carousel-control" href="#pokaz_slajdow" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+  		</a>
+
+  		<a class="left carousel-control" href="#pokaz_slajdow" data-slide="prev">
+    	<span class="glyphicon glyphicon-chevron-left"></span>
+  		</a>
+  </div>
+       <!-- <img src="materialy/03/03_06/start/images/logo_sk_top.png" alt="logo" class="pull-right">-->
+       <!--
+
+      </div>-->
+	     <ol class="breadcrumb">
+	      <li><a href="#"><span class="glyphicon glyphicon-home"></span> home</a></li>
+	      <li><a href="#">oferta</a></li>
+	      <li class="active">oferta kursów wideo</li>
+    	 </ol>
+    <ul class="nav nav-tabs">
+	  <li role="presentation"><a href="#audio" data-toggle='tab'>Audio</a></li>
+	  <li role="presentation"><a href="#office" data-toggle='tab'>Office</a></li>
+	  <li role="presentation"><a href="#fotografia" data-toggle='tab'>Fotografia</a></li>
+	</ul>
+	<div class="row">
+		<article class="col lg-12">
+		<div class="tab-content">
+		<div role="tabpanel" class="tab-pane fade in active" id="audio">
+    	 <h2> Audio - szkolenia wideo</h2>
+            <div class="table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Kurs</th>
+                    <th>Opis</th>
+                    <th>Cena</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_01.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Cubase 6</h3>
+                      <p>Poznaj obsługę profesjonalnego narzędzia do tworzenia muzyki. Kurs od podstaw wprowadzi Cię w świat pracy w programie Cubase: opanujesz obsługę narzędzi, dowiesz się jak komponować, nagrywać, miksować i edytować dowolne utwory.</p>
+                    </td>
+                    <td>
+                      <h4>105,00</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_02.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Adobe Audition CS6</h3>
+                      <p>Audition to popularny program do edycji dźwięku. Z kursem dowiesz się jak dostosować go do własnych potrzeb, rozpocząć pracę z plikami audio czy stosować różne efekty. To idealne rozwiązanie jeśli chcesz szybko opanować podstawową obsługę programu.</p>
+                    </td>
+                    <td>
+                      <h4>59,00</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_03.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Ableton Live</h3>
+                      <p>Ableton Live to często wybierane narzędzie przez początkujących producentów muzycznych. Z tym kursem poznasz jego obsługę i dowiesz się jak wykorzystać najważniejsze elementy podczas tworzenia własnych utworów muzycznych.</p>
+                    </td>
+                    <td>
+                      <h4>60,00</h4>
+                    </td>
+                  </tr>  
+                </tbody>
+              </table>
+            </div>
+           </div> 
+          <div role="tabpanel" class="tab-pane fade" id="office">
+            <h2>Office - szkolenia wideo</h2>
+            <div class="table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Kurs</th>
+                    <th>Opis</th>
+                    <th>Cena</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_04.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Excel programowanie w VBA</h3>
+                      <p>Ten kurs to doskonałe wprowadzenie do VBA w programie Excel. Opanujesz wszystkie kluczowe koncepcje języka i nauczysz się pisać makra ułatwiające codzienną pracę. Poznasz wiele praktycznych przykładów użycia Visual Basic w typowym skoroszycie Excela.</p>
+                    </td>
+                    <td>
+                      <h4>49,00</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_05.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Access 2010 esencja</h3>
+                      <p>Microsoft Access to doskonały program do zarządzania bazami danych. Bogaty zestaw narzędzi sprawia, że ten program używany jest na całym świecie zarówno przez osoby prywatne jak i wielkie przedsiębiorstwa. Teraz i ty możesz opanować tworzenie baz danych w programie Access.</p>
+                    </td>
+                    <td>
+                      <h4>49,00</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_06.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Excel - zaawansowane funkcje i formuły</h3>
+                      <p>Kurs przeznaczony jest dla osób, które chcą w pełni wykorzystać potencjał funkcji oraz formuł programu Excel. Poznasz przydatne techniki tworzenia formuł i będziesz w stanie za ich pomocą rozwiązać każdy nawet bardzo złożony problem.</p>
+                    </td>
+                    <td>
+                      <h4>55,00</h4>
+                    </td>
+                  </tr>  
+                </tbody>
+              </table>
+            </div>
+          </div>
+         <div role="tabpanel" class="tab-pane fade" id="fotografia">
+            <h2> Fotografia - szkolenia wideo</h2>
+            <div class="table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Kurs</th>
+                    <th>Opis</th>
+                    <th>Cena</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_07.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Photoshop CS6 esencja</h3>
+                      <p>Photoshop to najpopularniejszy program do obróbki fotografii cyfrowej. Z kursem poznasz interfejs, dowiesz się jak pracować na warstwach i opanujesz techniki edycji zdjęć. Jeśli znasz już podstawy to kurs pozwoli Ci usystematyzować wiedzę.</p>
+                    </td>
+                    <td>
+                      <h4>60,00</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_08.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Adobe Photoshop CS5 - esencja</h3>
+                      <p>Nasz kurs wideo Adobe Photoshop CS5 – Esencja, pozwoli Ci poznać wszystkie najważniejsze zagadnienia związane z tworzeniem i obróbką grafiki w tym wspaniałym programie. Przekonasz się dlaczego jest on tak popularny wśród milionów użytkowników na całym świecie na całym świecie.</p>
+                    </td>
+                    <td>
+                      <h4>45,00</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="materialy/06/06_01/start/images/prom_zdj_09.png" alt="" class="img-responsive">
+                    </td>
+                    <td>
+                      <h3>Kurs Photoshop kreatywne techniki pracy</h3>
+                      <p>Zobacz jak tworzyć niesamowite efekty w programie Photoshop. Szybko opanujesz liczne techniki: od pracy z kolorem, przez światła i cienie, HDR, rozmycia i pracę z warstwami po najróżniejsze efekty i stylizacje.</p>
+                    </td>
+                    <td>
+                      <h4>69,00</h4>
+                    </td>
+                  </tr>  
+                </tbody>
+              </table>
+            </div>
+          </div>
+         </div>
+        </div>
+      </article>
+    </div>
+<!--Ruby-->
+    <hr>
+      <div class="row">
+        <article class="col-lg-9 col-md-8 col-sm-7">
+          <img src="materialy/03/03_02/start/images/okladka_ruby.png" alt="Ruby" class="pull-right img-responsive">
+          <h4>Kurs, który nauczy cię programowania w języku Ruby.</h4>
+          <p>Jesteś początkującym programistą i chcesz poznać łatwy, intuicyjny język?
+          Chcesz opanować język, którego znajomość może być ważnym atutem na rynku pracy?
+          Potrzebujesz języka, który umożliwia łatwe i szybkie pisanie aplikacji?</p>
+        </article>
+        <aside class="col-lg-3 col-md-4 col-sm-5">
+          <h4>Czego się nauczysz z kursem?</h4>
+          <p>Ten kurs nauczy cię od podstaw programowania w Ruby. Zdobędziesz bogatą wiedzę, która pozwoli ci rozpocząć pracę nad własnymi aplikacji i zapewni bardzo solidne podstawy do dalszego rozwijania umiejętności.</p>
+        </aside>
+      </div>
+      <div class="row">
+        <aside class="col-lg-3 col-md-4 col-sm-5 col-lg-push-9">
+          <h4>Dlaczego Ruby On Rails?</h4>
+          <p>Ruby on Rails (albo RoR) to niezwykle popularny framework przeznaczony do szybkiego tworzenia dynamicznych serwisów internetowych. Napisany jest w języku Ruby i posiada przejrzystą modułową strukturę opartą na wzorcu MVC. W praktyce Ruby on Rails umożliwia szybkie pisanie aplikacji internetowych, łatwą rozbudowę o nowe funkcje, oferuje dużą stabilność, bezpieczeństwo, mnóstwo rozszerzeń oraz liczne grono chętnych do pomocy użytkowników. Znajomość RoR pozwala na błyskawiczną realizację wszystkich twoich pomysłów. Zamiast walczyć z oprogramowaniem możesz po prostu skupić się na rozbudowywaniu strony o wszelkie możliwe funkcje!</p>
+        </aside>
+        <article class="col-lg-9 col-md-8 col-sm-7 col-lg-pull-3 img-responsive">
+          <img src="materialy/03/03_02/start/images/okladka_ror.png" alt="Ruby on Rails" class="pull-left">
+          <h4>Łatwe tworzenie dynamicznych internetowych aplikacji</h4>
+          <p>Zamierzasz zbudować nowoczesny serwis internetowy i potrzebujesz rozwiązania, które umożliwi ci łatwe wdrożenie twojego pomysłu?</p>
+          <p>Masz już jakieś doświadczenia z budową statycznych stron i chcesz wzbogacić swoje umiejętności o tworzenie dynamicznych, funkcjonalnych witryn? Chcesz zdobyć praktyczne umiejętności, których znajomość może zwiększyć twoje szanse na rynku pracy?
+          Wiesz już dlaczego warto poznać Ruby on Rails i szukasz kursu, które szybko wprowadzi cię w świat tego doskonałego frameworka?</p>
+        </article>
+      </div>
+      <hr><!--linia-->
+<div class="row">
+     <div class="col-lg-3 col-md-4 col-sm-5 col-lg-push-9">
+      <p>Typowy kurs to: ksiązka i płyta płyta. Ksiązka to wprowadzenie a film to szczegóły. Wszystko jest wyjaśnione i łatwe w obsłudze. Filmy to merytoryczna część kursów.</p>
+     </div>
+     <div class="col-lg-9 col-md-8 col-sm-7 col-lg-pull-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <p><img src="materialy/03/03_05/start/images/okladka_dcc_mini.png" alt="Kurs Dreamweaver CC" class="img-thumbnail"></p>
+              <blockquote>
+                <p>Kurs Dreamweaver CC - szybkie tworzenie stron</p>
+              </blockquote>
+              <a href="#" class="btn btn-default btn-lg btn-block" data-toggle="tooltip" data-placement="bottom" title="Kurs szybkiego tworzenia">zobacz  <span class="glyphicon glyphicon-play-circle"></a></span>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <p><img src="materialy/03/03_05/start/images/okladka_aacc_mini.png" alt="Kurs After Effects CC" class="img-thumbnail"></p>
+            <blockquote>
+            <p>Kurs After Effects CC - od podstaw</p>
+            </blockquote>
+            <a href="#" class="btn btn-primary"  data-toggle="tooltip" data-placement="bottom" title="Kurs szybkiego tworzenia">zobacz  <span class="glyphicon glyphicon-play-circle"></a></span>
+          </div>      
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <p><img src="materialy/03/03_05/start/images/okladka_indcc_mini.png" alt="Kurs InDesign CC" class="img-thumbnail"></p>
+              <blockquote>
+                <p>Kurs InDesign CC - od podstaw</p>
+              </blockquote>
+              <a href="#" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="bottom" title="Kurs szybkiego tworzenia">zobacz  <span class="glyphicon glyphicon-play-circle" ></a></span>
+          </div>      
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <p><img src="materialy/03/03_05/start/images/okladka_ios_mini.png" alt="Kurs iOS" class="img-thumbnail"></p>
+          <blockquote>
+            <p>Kurs iOS - tworzenie gry od A do Z</p>        
+          </blockquote>
+          <a href="#" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="bottom" title="Kurs szybkiego tworzenia">zobacz  <span class="glyphicon glyphicon-play-circle"></a></span>
+          </div>                  
+        </div>
+     </div>
+</div>
+
+  <hr>
+  <div class="row">
+
+    <article class="col-lg-12">
+       <h2>Pytania i odpowiedzi:</h2>
+        <div class="panel-group" id="according">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+               <a href="#pytanie1" data-toggle="collapse" data-parent="#according">
+                <h4>
+                  Jakie są wymagania kursów?
+                </h4>
+               </a>
+           </div>
+              <div id="pytanie1" class="panel-collapse collapse">
+              	<div class="panel-body">
+              		Do odtwarzania potrzebna jest przeglądarka internetowa (Internet Explorer, Firefox, Chrome, itp.) wyposażona w Adobe Flash Player w wersji 9 lub nowszej. Najnowszą wersję Flash Player można ściągnąć tutaj : http://get.adobe.com/pl/flashplayer/. Jeżeli poniższy film odtwarza się prawidłowo to masz pewność, że zakupiony kurs będzie działał na twoim komputerze: Kurs: wersja demo Wersje elektroniczne to skompresowane pliki rar. Przez użyciem należy je rozpakować za pomocą odpowiedniego programu (np. WinRar www.winrar.pl/winrar/pobierz). 
+                </div>
+              </div>
+           </div>
+        <div class="panel-group" id="according">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+               <a href="#pytanie2" data-toggle="collapse" data-parent="#according">
+	              <h4>
+	                  Jak wygląda zakup wersji elektronicznej?
+	              </h4>
+	            </a>
+           </div>
+              <div id="pytanie2" class="panel-collapse collapse">
+              	<div class="panel-body">
+             	 	Po zatwierdzeniu płatności otrzymasz email w którym znajduje się odnośnik za pomocą, którego będziesz mógł pobrać zakupiony kurs. Możesz podjąć 5 prób pobrania zakupionego kursu. Odnośnik będzie aktywny przez 5 dni licząc od pierwszej próby pobrania. Jeśli wystąpią problemy podczas pobierania skontaktuj się z nami przez telefon lub e-mail, a my zwiększymy limit.
+             	</div>
+              </div>
+           </div>
+        <div class="panel-group" id="according">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+               <a href="#pytanie3" data-toggle="collapse" data-parent="#according">
+              	  <h4>
+                  	Jak skrócić czas oczekiwania na dostęp do wersji elektronicznej?
+              	  </h4>
+              	</a>
+           </div>
+              <div id="pytanie3" class="panel-collapse collapse">
+              	<div class="panel-body">
+              		Czas oczekiwania uzależniony jest od sposobu płatności. Jeśli skorzystasz z płatności on-line (payu.pl, dotpay.pl, paypal.pl) to email z odnośnikiem do pobrania kursu zostanie wysłany przez zautomatyzowany system. Czas oczekiwania nie powinien przekroczyć kilku minut. Jeśli zdecydujesz się na wykonanie zwykłego przelewu bankowego to będziemy musieli ręcznie zatwierdzić twoją wpłatę po tym jak zostanie ona zaksięgowana na naszym koncie. W tym wypadku czas oczekiwania może się przedłużyć
+              	</div>
+              </div>
+           </div>
+</div>
+    </article>
+        </div>
+
+      <hr>
+      <footer class="row">
+        <p><small>Copyright 2013 &copy; StrefaKursów.pl</small></p>
+      </footer>
+    </div>
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <script>
+    	$(function () {
+    		$('.nav-tabs a:first').tab('show')
+    	})
+    </script>
+    <script>
+    	$('.btn btn-success btn-lg').tooltip();
+    </script>
+  </body>
+</html>
